@@ -22,18 +22,25 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 6.	Click OK to see/view the output of your program on the Emulator screen. 
 
 7.	After running the program, another menu screen will be displayed, where you have the option to “View” symbol table,
-8.	![image](https://user-images.githubusercontent.com/36288975/189273263-d65baae9-4b8f-4723-afb3-c0ffa4052b04.png)
+8.	<br>![image](https://user-images.githubusercontent.com/36288975/189273263-d65baae9-4b8f-4723-afb3-c0ffa4052b04.png)
 9.	Click on emulate to start emulation 
 ![image](https://user-images.githubusercontent.com/36288975/189273273-9bb36ec1-e2e8-4892-8d35-37707332bfdc.png)
-10.	If no errors are found click on run the program and check the status of various flags in the flags tab as shown below 
+10.	If no errors are found click on run the program and check the status of various flags in the flags tab as shown below <br>
 ![image](https://user-images.githubusercontent.com/36288975/189273277-113a2a33-4a40-4ff8-95a5-ecd3a1f504fe.png)
 
 ## Programs for arithmetic  operations :
 ## Addition  of 8 bit ALP 
 ```
-
+Org 100h
+Mov ax, [1100h]
+Mov bx, [1102h]
+add ax,bx
+Mov [1200h], ax
+Mov [1202h], dx
+hlt
 ```
 ## Output  
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/195ee0d9-3595-4ca1-836d-98917aa3a5f8" />
 
  
 ## Subtraction   of 8 bit numbers  ALP 
@@ -48,9 +55,7 @@ hlt
 ```
 
 ## Output  
-
-
-
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0d9825b9-1257-4e41-a603-13d1806a5e45" />
 
 
 ## Multiplication alp 
@@ -64,7 +69,7 @@ Mov [1202h], dx
 hlt
 ```
 ## Output  
-<img width="1920" height="1080" alt="Screenshot 2026-10-30 194844" src="https://github.com/user-attachments/assets/cc34923e-fe78-44bd-af53-713807d6aa9a" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/60e942dc-3a57-4672-ba14-c628019c35b0" />
 
 
 ## Division alp 
@@ -79,7 +84,9 @@ hlt
 ```
 
 ## Output  
-<img width="1920" height="1080" alt="Screenshot 2026-10-30 194130" src="https://github.com/user-attachments/assets/39618b9b-6766-4088-a6e9-acc228470af8" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0ae91fb2-b8cb-4d43-bfe4-4bd723b23410" />
+
+
 
 ## Result :
 Thus, the program has been executed successfully.
